@@ -10,7 +10,7 @@ Entity.default_shader = lit_with_shadows_shader
 ground = Entity(model='plane', collider='box', scale=64, texture='grass', texture_scale=(4,4))
 
 editor_camera = EditorCamera(enabled=False, ignore_paused=True)
-player = FirstPersonController(model='Copy of Kirby (1).glb', z=-10, color=color.orange, origin_y=-0.5, speed=8, position = (-28,0,25))
+player = FirstPersonController(model='cube', z=-10, color=color.orange, origin_y=-0.5, speed=8, position = (-28,0,25))
 player.collider = MeshCollider(player, Vec3(0,1,0), Vec3(1,2,1))
 
 flag = Entity(model='cube', parent=camera, position=(.5,-.25,.25), scale=(.3,.2,1), origin_z=-.5, color=color.red)
